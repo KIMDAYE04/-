@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 body {
   background-color: linen;
   color: #333;
@@ -15,7 +20,57 @@ ul {
   padding: 0 30px;
 }
 
+.navbar {
+  background-color: lightblue;
+  color: #fff;
+  height: 50px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: none;
+}
+
 .navbar a:hover {
   border-bottom: 2px #fff solid;
   color: #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 2px;
+  font-size: medium;
+  font-weight: none;
+  background-color: rgb(219, 242, 242);
+  /* border-radius: 10px; */
+  border-width: 1px;
+}
+
+button:hover {
+  color: grey;
+  background-color: white;
 }
